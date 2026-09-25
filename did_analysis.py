@@ -131,6 +131,7 @@ def plot_trends(df, treated, controls, out):
     ax.text(2014.7, ax.get_ylim()[1] - 1, "2014년 7월 통합",
             fontsize=9, va="top", color="#4c5661")
     ax.set_xlabel("연도")
+    ax.set_xticks([2005, 2008, 2011, 2014, 2017, 2020, 2022])
     ax.set_ylabel("재정자립도 (%, 세입과목 개편 전 기준)")
     ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.17),
               ncol=3, fontsize=9, frameon=False)
